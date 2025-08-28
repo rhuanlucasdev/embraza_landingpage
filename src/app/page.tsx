@@ -54,7 +54,10 @@ export default function Home() {
           </div>
           <div className="flex flex-1 items-center justify-end space-x-4">
             <Button variant="ghost" size="icon" asChild>
-              <Link href="#" target="_blank">
+              <Link
+                href="https://www.instagram.com/embraza.concepts"
+                target="_blank"
+              >
                 <Instagram />
                 <span className="sr-only">Instagram</span>
               </Link>
@@ -91,8 +94,11 @@ export default function Home() {
               Instagram.
             </p>
             <Button asChild size="lg" className="animate-pulse-slow">
-              <Link href="#" target="_blank">
-                <Instagram className="mr-2 h-5 w-5" /> @embraza.oficial
+              <Link
+                href="https://www.instagram.com/embraza.concepts"
+                target="_blank"
+              >
+                <Instagram className="mr-2 h-5 w-5" /> @embraza.concepts
               </Link>
             </Button>
           </div>
