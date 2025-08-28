@@ -1,4 +1,4 @@
-import { Zap } from "lucide-react";
+import { Flame } from "lucide-react";
 import Link from "next/link";
 
 export default function Logo() {
@@ -8,7 +8,7 @@ export default function Logo() {
       className="flex items-center space-x-2"
       aria-label="Embraza Home"
     >
-      <Zap className="h-6 w-6 text-primary" />
+      <Flame className="h-6 w-6 text-primary" />
       <span className="font-bold text-2xl font-display">Embraza</span>
     </Link>
   );
