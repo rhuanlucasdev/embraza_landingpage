@@ -23,33 +23,58 @@ import { UserNav } from "@/components/user-nav";
 export default function Home() {
   const tshirtImages = [
     {
-      src: "https://picsum.photos/600/800?random=1",
+      src: "/estampa2.jpg",
       alt: "Design de camiseta 1",
       hint: "abstract design",
     },
     {
-      src: "https://picsum.photos/600/800?random=2",
+      src: "/estampa3.jpg",
       alt: "Design de camiseta 2",
       hint: "graphic illustration",
     },
     {
-      src: "https://picsum.photos/600/800?random=3",
+      src: "/estampa4.jpg",
       alt: "Design de camiseta 3",
       hint: "minimalist typography",
     },
     {
-      src: "https://picsum.photos/600/800?random=4",
+      src: "/estampa5.jpg",
       alt: "Design de camiseta 4",
       hint: "retro style",
     },
     {
-      src: "https://picsum.photos/600/800?random=5",
+      src: "/estampa6.jpg",
       alt: "Design de camiseta 5",
       hint: "nature inspired",
     },
     {
-      src: "https://picsum.photos/600/800?random=6",
+      src: "/estampa7.jpg",
       alt: "Design de camiseta 6",
+      hint: "vintage look",
+    },
+    {
+      src: "/estampa8.jpg",
+      alt: "Design de camiseta 7",
+      hint: "vintage look",
+    },
+    {
+      src: "/estampa9.png",
+      alt: "Design de camiseta 8",
+      hint: "vintage look",
+    },
+    {
+      src: "/estampa10.png",
+      alt: "Design de camiseta 9",
+      hint: "vintage look",
+    },
+    {
+      src: "/estampa11.png",
+      alt: "Design de camiseta 10",
+      hint: "vintage look",
+    },
+    {
+      src: "/estampa12.png",
+      alt: "Design de camiseta 11",
       hint: "vintage look",
     },
   ];
