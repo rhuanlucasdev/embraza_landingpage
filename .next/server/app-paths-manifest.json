@@ -1,4 +1,11 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js"
+  "/checkout/page": "app/checkout/page.js",
+  "/login/page": "app/login/page.js",
+  "/meus-dados/page": "app/meus-dados/page.js",
+  "/meus-pedidos/page": "app/meus-pedidos/page.js",
+  "/minha-conta/page": "app/minha-conta/page.js",
+  "/page": "app/page.js",
+  "/products/[productId]/page": "app/products/[productId]/page.js",
+  "/products/page": "app/products/page.js"
 }

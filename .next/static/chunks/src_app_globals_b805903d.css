@@ -550,6 +550,14 @@ body {
   top: 50%;
 }
 
+.-right-2 {
+  right: -.5rem;
+}
+
+.-top-2 {
+  top: -.5rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -660,6 +668,18 @@ body {
   margin-top: 1.5rem;
 }
 
+.mb-auto {
+  margin-bottom: auto;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
 .block {
   display: block;
 }
@@ -690,6 +710,10 @@ body {
 
 .aspect-video {
   aspect-ratio: 16 / 9;
+}
+
+.aspect-\[3\/4\] {
+  aspect-ratio: 3 / 4;
 }
 
 .size-4 {
@@ -775,6 +799,10 @@ body {
 
 .h-svh {
   height: 100svh;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .max-h-96 {
@@ -945,6 +973,14 @@ body {
   max-width: 24rem;
 }
 
+.max-w-xs {
+  max-width: 20rem;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
 .flex-1 {
   flex: 1;
 }
@@ -953,7 +989,7 @@ body {
   flex-shrink: 0;
 }
 
-.grow {
+.flex-grow, .grow {
   flex-grow: 1;
 }
 
@@ -1235,6 +1271,10 @@ body {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
 .whitespace-nowrap {
@@ -1605,6 +1645,10 @@ body {
   padding-top: 1rem;
 }
 
+.pr-4 {
+  padding-right: 1rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1704,6 +1748,10 @@ body {
 
 .leading-none {
   line-height: 1;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
 }
 
 .tracking-tight {
@@ -2772,8 +2820,16 @@ body {
     margin-top: 0;
   }
 
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:flex {
     display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:max-w-sm {
@@ -2816,6 +2872,10 @@ body {
 
   .sm\:rounded-lg {
     border-radius: var(--radius);
+  }
+
+  .sm\:p-3 {
+    padding: .75rem;
   }
 
   .sm\:text-left {
@@ -2868,6 +2928,10 @@ body {
     flex-direction: row;
   }
 
+  .md\:p-3 {
+    padding: .75rem;
+  }
+
   .md\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -2876,6 +2940,11 @@ body {
   .md\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .md\:text-3xl {
@@ -2944,12 +3013,24 @@ body {
     grid-column: span 2 / span 2;
   }
 
+  .lg\:inline-flex {
+    display: inline-flex;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:gap-16 {
+    gap: 4rem;
   }
 }
 
