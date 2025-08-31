@@ -1,7 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { Zap, Mail, Instagram } from "lucide-react";
+import {
+  Zap,
+  Instagram,
+  ShoppingCart,
+  User,
+  LogIn,
+  LogOut,
+} from "lucide-react";
+import React from "react";
 
 import { Button } from "@/components/ui/button";
 import Logo from "@/components/logo";
@@ -10,36 +18,37 @@ import { ParticleBackground } from "@/components/particle-background";
 import { GradientGlowDivider } from "@/components/gradient-glow-divider";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import Link from "next/link";
+import { UserNav } from "@/components/user-nav";
 
 export default function Home() {
   const tshirtImages = [
     {
-      src: "/estampa1.jpg",
+      src: "https://picsum.photos/600/800?random=1",
       alt: "Design de camiseta 1",
       hint: "abstract design",
     },
     {
-      src: "/estampa2.jpg",
+      src: "https://picsum.photos/600/800?random=2",
       alt: "Design de camiseta 2",
       hint: "graphic illustration",
     },
     {
-      src: "/estampa3.jpg",
+      src: "https://picsum.photos/600/800?random=3",
       alt: "Design de camiseta 3",
       hint: "minimalist typography",
     },
     {
-      src: "/estampa4.jpg",
+      src: "https://picsum.photos/600/800?random=4",
       alt: "Design de camiseta 4",
       hint: "retro style",
     },
     {
-      src: "/estampa5.jpg",
+      src: "https://picsum.photos/600/800?random=5",
       alt: "Design de camiseta 5",
       hint: "nature inspired",
     },
     {
-      src: "/estampa6.jpg",
+      src: "https://picsum.photos/600/800?random=6",
       alt: "Design de camiseta 6",
       hint: "vintage look",
     },
@@ -52,16 +61,20 @@ export default function Home() {
           <div className="mr-4 flex">
             <Logo />
           </div>
-          <div className="flex flex-1 items-center justify-end space-x-4">
+          <div className="flex flex-1 items-center justify-end space-x-2">
             <Button variant="ghost" size="icon" asChild>
-              <Link
-                href="https://www.instagram.com/embraza.concepts"
-                target="_blank"
-              >
+              <Link href="#" target="_blank">
                 <Instagram />
                 <span className="sr-only">Instagram</span>
               </Link>
             </Button>
+            <Button variant="ghost" size="icon" asChild>
+              <Link href="/products">
+                <ShoppingCart />
+                <span className="sr-only">Carrinho</span>
+              </Link>
+            </Button>
+            <UserNav />
           </div>
         </div>
       </header>
@@ -77,30 +90,6 @@ export default function Home() {
             <p className="max-w-2xl mx-auto text-2xl md:text-3xl text-foreground/80 font-display">
               O pixo é arte. A arte é Embraza.
             </p>
-          </div>
-        </section>
-
-        {/* Instagram CTA Section */}
-        <section
-          id="instagram-cta"
-          className="py-16 md:py-24 text-center bg-secondary animate-fade-in-up"
-        >
-          <div className="container text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-headline">
-              Siga a Embraza
-            </h2>
-            <p className="max-w-2xl mx-auto text-lg md:text-xl text-foreground/80 mb-8">
-              Fique por dentro das novidades e coleções exclusivas no nosso
-              Instagram.
-            </p>
-            <Button asChild size="lg" className="animate-pulse-slow">
-              <Link
-                href="https://www.instagram.com/embraza.concepts"
-                target="_blank"
-              >
-                <Instagram className="mr-2 h-5 w-5" /> @embraza.concepts
-              </Link>
-            </Button>
           </div>
         </section>
 
@@ -131,7 +120,37 @@ export default function Home() {
               speed="slow"
             />
           </div>
+          <div className="container text-center mt-12">
+            <Button asChild size="lg" className="animate-pulse-slow">
+              <Link href="/products">
+                <ShoppingCart className="mr-2 h-5 w-5" /> Ver Coleção
+              </Link>
+            </Button>
+          </div>
         </section>
+
+        {/* Instagram CTA Section */}
+        <section
+          id="instagram-cta"
+          className="py-16 md:py-24 text-center bg-secondary animate-fade-in-up"
+        >
+          <div className="container text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-headline">
+              Siga a Embraza
+            </h2>
+            <p className="max-w-2xl mx-auto text-lg md:text-xl text-foreground/80 mb-8">
+              Fique por dentro das novidades e coleções exclusivas no nosso
+              Instagram.
+            </p>
+            <Button asChild size="lg" className="animate-pulse-slow">
+              <Link href="#" target="_blank">
+                <Instagram className="mr-2 h-5 w-5" /> @embraza.oficial
+              </Link>
+            </Button>
+          </div>
+        </section>
+
+        <GradientGlowDivider />
       </main>
       <SiteFooter />
     </div>

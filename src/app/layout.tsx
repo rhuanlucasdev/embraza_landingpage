@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import { CartProvider } from "@/context/cart-context";
 
 export const metadata: Metadata = {
-  title: "Embraza",
-  description: "Mais que uma marca, estilo das ruas.",
+  title: "Embraza Concepts",
+  description:
+    "Uma página de destino dinâmica para uma marca de camisetas com efeitos interativos e sugestões de design de IA.",
   icons: {
     icon: "/icon.ico",
   },
@@ -30,7 +32,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body antialiased">
-        {children}
+        <CartProvider>{children}</CartProvider>
         <Toaster />
       </body>
     </html>
